@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: readify-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: readify-frontend
+  template:
+    metadata:
+      labels:
+        app: readify-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: bhagathkr/readify-frontend
+        ports:
+        - containerPort: 3000
