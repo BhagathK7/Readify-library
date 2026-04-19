@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: readify-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: readify
+  template:
+    metadata:
+      labels:
+        app: readify
+    spec:
+      containers:
+      - name: backend
+        image: bhagathkr/readify-backend
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          value: "mongodb+srv://bhagathkrishnasunilkumar23cse_db_user:readify@cluster0.zvdwja2.mongodb.net/library?retryWrites=true&w=majority"
