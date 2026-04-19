@@ -1,6 +1,4 @@
-// frontend/src/utils/api.js
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://readify-backend:5000/api';
 
 export const fetchJSON = async (url, options = {}) => {
   const token = localStorage.getItem('token');
