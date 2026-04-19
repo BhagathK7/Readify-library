@@ -1,14 +1,11 @@
-// backend/config/db.js
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const connectDB = async (mongoURI) => {
+const connectDB = async (uri) => {
   try {
-    await mongoose.connect(mongoURI, {
-      // mongoose v7 no longer needs these options
-    });
-    console.log('MongoDB connected');
-  } catch (err) {
-    console.error('MongoDB connection error:', err.message);
+    await mongoose.connect(uri);
+    console.log("MongoDB Connected");
+  } catch (error) {
+    console.error(error);
     process.exit(1);
   }
 };
