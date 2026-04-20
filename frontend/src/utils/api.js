@@ -1,7 +1,7 @@
 // frontend/src/utils/api.js
 
 // 🔥 FINAL FIXED API URL (use your Minikube backend URL)
-const API_URL = "http://192.168.49.2:32524/api";
+const API_URL = "http://localhost:5000/api";
 
 export const fetchJSON = async (url, options = {}) => {
   const token = localStorage.getItem('token');
