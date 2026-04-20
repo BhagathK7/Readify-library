@@ -61,7 +61,7 @@ export default function UserDashboard() {
   return (
     <div className="user-dashboard-page">
       <div className="content-card">
-        <h2>Welcome, {user.name}!</h2>
+        <h2>Thank You , {user.name}!</h2>
         <div className="dashboard-stats">
           <div className="stat-card">
             <h3>Books Read</h3>
