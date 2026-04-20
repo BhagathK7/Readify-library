@@ -1,7 +1,16 @@
 // frontend/src/utils/api.js
 
-// 🔥 FINAL FIXED API URL (use your Minikube backend URL)
-const API_URL = "http://localhost:5000/api";
+const getApiUrl = () => {
+  // If running inside Kubernetes (production build)
+  if (window.location.hostname !== "localhost") {
+    return "http://readify-backend:5000/api";
+  }
+
+  // Local / Jenkins
+  return "http://localhost:5000/api";
+};
+
+const API_URL = getApiUrl();
 
 export const fetchJSON = async (url, options = {}) => {
   const token = localStorage.getItem('token');
