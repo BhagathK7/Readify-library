@@ -1,4 +1,7 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://readify-backend:5000/api';
+// frontend/src/utils/api.js
+
+// 🔥 FINAL FIXED API URL (use your Minikube backend URL)
+const API_URL = "http://192.168.49.2:32524/api";
 
 export const fetchJSON = async (url, options = {}) => {
   const token = localStorage.getItem('token');
