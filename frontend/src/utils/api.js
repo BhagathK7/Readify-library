@@ -1,16 +1,6 @@
 // frontend/src/utils/api.js
 
-const getApiUrl = () => {
-  // If running inside Kubernetes (production build)
-  if (window.location.hostname !== "localhost") {
-    return "http://readify-backend:5000/api";
-  }
-
-  // Local / Jenkins
-  return "http://localhost:5000/api";
-};
-
-const API_URL = getApiUrl();
+const API_URL = "http://192.168.49.2:31471/api"; // ← replace with YOUR port
 
 export const fetchJSON = async (url, options = {}) => {
   const token = localStorage.getItem('token');

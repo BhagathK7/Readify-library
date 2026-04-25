@@ -13,8 +13,8 @@ spec:
         app: readify-frontend
     spec:
       containers:
-      - name: frontend
-        image: bhagathkr/readify-frontend
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 3000
+        - name: frontend
+          image: readify-frontend  
+          imagePullPolicy: Never   
+          ports:
+            - containerPort: 3000
