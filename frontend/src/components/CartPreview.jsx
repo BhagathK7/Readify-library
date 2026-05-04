@@ -10,7 +10,7 @@ export default function CartPreview() {
       <div><strong>Cart</strong></div>
       <div>{items.length} items</div>
       <div>Total: ₹{total.toFixed(2)}</div>
-      <Link to="/cart" className="btn-primary">View Cart</Link>
+      <Link to="/cart" className="btn-primary">View Crt🛒</Link>
     </div>
   );
 }
