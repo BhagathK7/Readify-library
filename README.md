@@ -1,87 +1,117 @@
----
+<div align="center">
 
-````md
-# Readify
+# READIFY
 
-Production-ready Library Management System built using the MERN stack with a complete DevOps workflow powered by Jenkins, Docker, Kubernetes, Terraform, Prometheus, and Grafana.
+### Cloud-Native Library Management Platform
 
----
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,docker,kubernetes,jenkins,terraform,grafana,prometheus,git" />
+</p>
 
-## Overview
-
-Readify is a full-stack web application designed to simulate a real-world cloud-native deployment pipeline.  
-The project demonstrates modern DevOps practices including:
-
-- CI/CD automation
-- Containerization
-- Kubernetes orchestration
-- Infrastructure as Code
-- Monitoring & Observability
+<p align="center">
+Modern MERN Stack application integrated with a complete DevOps workflow using Kubernetes, Terraform, CI/CD automation, and Monitoring infrastructure.
+</p>
 
 ---
 
-## Core Features
+</div>
 
-### Application
-- User Authentication
+# Overview
+
+Readify is a full-stack Library Management System developed to demonstrate a production-style DevOps workflow integrated with a MERN stack application.
+
+The platform showcases modern deployment and infrastructure practices including containerization, orchestration, infrastructure automation, CI/CD pipelines, and monitoring.
+
+---
+
+# Core Features
+
+## Application Layer
+
+- User Authentication System
 - Book Catalog Management
-- Cart & Order System
+- Shopping Cart & Orders
 - Admin Dashboard
 - REST API Architecture
-
-### DevOps & Cloud
-- Jenkins CI/CD Pipeline
-- Dockerized Services
-- Kubernetes Deployment
-- Terraform Infrastructure
-- Prometheus Monitoring
-- Grafana Dashboards
 - MongoDB Atlas Integration
 
 ---
 
-## Technology Stack
+## DevOps & Infrastructure
 
-| Layer | Technology |
+- Jenkins CI/CD Pipeline
+- Docker Containerization
+- Kubernetes Deployment
+- Terraform Infrastructure Provisioning
+- Prometheus Monitoring
+- Grafana Visualization
+- Minikube Local Cluster
+
+---
+
+# Technology Stack
+
+| Layer | Technologies |
 |------|-------------|
 | Frontend | React, Vite, Tailwind CSS |
 | Backend | Node.js, Express.js |
 | Database | MongoDB Atlas |
 | Containerization | Docker |
 | CI/CD | Jenkins |
-| Orchestration | Kubernetes (Minikube) |
-| Infrastructure | Terraform |
+| Orchestration | Kubernetes, Minikube |
+| Infrastructure as Code | Terraform |
 | Monitoring | Prometheus, Grafana |
+| Version Control | Git & GitHub |
 
 ---
 
-## System Architecture
+# Architecture
 
 ```text
 Developer
-   ↓
+    │
+    ▼
 GitHub Repository
-   ↓
-Jenkins Pipeline
-   ↓
+    │
+    ▼
+Jenkins CI/CD Pipeline
+    │
+    ▼
 Docker Image Build
-   ↓
-Kubernetes Deployment
-   ↓
+    │
+    ▼
+Kubernetes Cluster (Minikube)
+    │
+    ├── Frontend Service
+    ├── Backend Service
+    │
+    ▼
 MongoDB Atlas
-   ↓
-Monitoring (Prometheus + Grafana)
-````
+    │
+    ▼
+Prometheus + Grafana Monitoring
+```
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 Readify-library/
 │
 ├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   └── server.js
+│
 ├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── vite.config.js
+│
 ├── deployment.yaml
 ├── frontend-deployment.yaml
 ├── terraform-readify/
@@ -90,9 +120,9 @@ Readify-library/
 
 ---
 
-## Local Development
+# Local Development Setup
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/BhagathK7/Readify-library.git
@@ -101,7 +131,7 @@ cd Readify-library
 
 ---
 
-### Backend Setup
+## Backend Setup
 
 ```bash
 cd backend
@@ -109,9 +139,15 @@ npm install
 npm start
 ```
 
+Backend runs on:
+
+```text
+http://localhost:5000
+```
+
 ---
 
-### Frontend Setup
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -119,11 +155,17 @@ npm install
 npm run dev
 ```
 
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
 ---
 
-## Environment Variables
+# Environment Variables
 
-Create `.env` inside `backend/`
+Create a `.env` file inside `backend/`
 
 ```env
 MONGO_URI=your_mongodb_uri
@@ -133,16 +175,18 @@ CLIENT_URL=http://localhost:5173
 
 ---
 
-## Docker Workflow
+# Docker Workflow
 
-### Build Images
+## Build Images
 
 ```bash
 docker build -t readify-backend ./backend
 docker build -t readify-frontend ./frontend
 ```
 
-### Run Containers
+---
+
+## Run Containers
 
 ```bash
 docker run -d -p 5000:5000 readify-backend
@@ -151,22 +195,26 @@ docker run -d -p 3000:3000 readify-frontend
 
 ---
 
-## Kubernetes Deployment
+# Kubernetes Deployment
 
-### Start Minikube
+## Start Minikube
 
 ```bash
 minikube start
 ```
 
-### Deploy Application
+---
+
+## Deploy Backend & Frontend
 
 ```bash
 kubectl apply -f deployment.yaml
 kubectl apply -f frontend-deployment.yaml
 ```
 
-### Access Frontend
+---
+
+## Access Frontend
 
 ```bash
 minikube service readify-frontend --url
@@ -174,7 +222,7 @@ minikube service readify-frontend --url
 
 ---
 
-## Terraform Infrastructure
+# Terraform Infrastructure
 
 ```bash
 cd terraform-readify
@@ -182,55 +230,99 @@ terraform init
 terraform apply
 ```
 
-Terraform manages:
+Terraform provisions:
 
-* Kubernetes Namespace
-* Backend Deployment
-* Frontend Deployment
-* Services
+- Kubernetes Namespace
+- Frontend Deployment
+- Backend Deployment
+- Service Configuration
 
 ---
 
-## Monitoring Stack
+# Monitoring Stack
 
-### Prometheus
+## Prometheus
 
 ```bash
 kubectl port-forward svc/prometheus-kube-prometheus-prometheus 9090
 ```
 
-### Grafana
+Access:
+
+```text
+http://localhost:9090
+```
+
+---
+
+## Grafana
 
 ```bash
 kubectl port-forward svc/prometheus-grafana 3000:80
 ```
 
+Access:
+
+```text
+http://localhost:3000
+```
+
 ---
 
-## Jenkins Pipeline Stages
+# Jenkins CI/CD Pipeline
 
-1. Clone Repository
+Pipeline stages include:
+
+1. Clone Repository from GitHub
 2. Build Docker Images
-3. Run Containers
-4. Deploy Application
-5. Monitor Services
+3. Run Application Containers
+4. Deploy Services
+5. Monitor Infrastructure
 
 ---
 
-## Learning Outcomes
+# Deployment Workflow
 
-* CI/CD Automation
-* Kubernetes Orchestration
-* Infrastructure as Code
-* Monitoring & Observability
-* Production-style Deployment Workflow
+```text
+Code Commit
+    │
+    ▼
+GitHub Push
+    │
+    ▼
+Jenkins Pipeline Trigger
+    │
+    ▼
+Docker Build Process
+    │
+    ▼
+Kubernetes Deployment
+    │
+    ▼
+Application Services
+    │
+    ▼
+Prometheus Metrics Collection
+    │
+    ▼
+Grafana Visualization
+```
 
 ---
 
-## License
+# Key Learnings
 
-Educational Project
-
-````
+- Full CI/CD Pipeline Implementation
+- Docker Containerization
+- Kubernetes Orchestration
+- Infrastructure as Code using Terraform
+- Monitoring & Observability
+- Cloud Database Integration
+- Production-style Deployment Workflow
+- Real-world Debugging & DevOps Practices
 
 ---
+
+# License
+
+This project is developed for educational and learning purposes.
