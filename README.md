@@ -1,12 +1,8 @@
-<div align="center">
+
 
 # READIFY
 
 ### Cloud-Native Library Management Platform
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,docker,kubernetes,jenkins,terraform,grafana,prometheus,git" />
-</p>
 
 <p align="center">
 Modern MERN Stack application integrated with a complete DevOps workflow using Kubernetes, Terraform, CI/CD automation, and Monitoring infrastructure.
@@ -14,7 +10,6 @@ Modern MERN Stack application integrated with a complete DevOps workflow using K
 
 ---
 
-</div>
 
 # Overview
 
