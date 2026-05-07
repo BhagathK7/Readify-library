@@ -315,7 +315,7 @@ Grafana Visualization
 - Full CI/CD Pipeline Implementation
 - Docker Containerization
 - Kubernetes Orchestration
-- Infrastructure as Code using Terraform
+- Infrastructure As Code using Terraform
 - Monitoring & Observability
 - Cloud Database Integration
 - Production-style Deployment Workflow
