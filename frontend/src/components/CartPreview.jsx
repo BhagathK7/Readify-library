@@ -8,9 +8,9 @@ export default function CartPreview() {
   return (
     <div className="cart-preview">
       <div><strong>Cart</strong></div>
-      <div>{items.length} items</div>
-      <div>Total: ₹{total.toFixed(2)}</div>
-      <Link to="/cart" className="btn-primary">View Cart🛒</Link>
+      <div>{items.length} Items</div>
+      <div>Total : ₹{total.toFixed(2)}</div>
+      <Link to="/cart" className="btn-primary">View Cart 🛒</Link>
     </div>
   );
 }

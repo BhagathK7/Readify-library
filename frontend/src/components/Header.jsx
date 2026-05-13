@@ -33,7 +33,6 @@ export default function Header({ showSearch = true }) {
   return (
     <header className="header">
 
-      {/* ✅ SHOW ONLY WHEN NEEDED */}
       {showSearch && (
         <form onSubmit={handleSearch} className="header-search-form">
           <IconSearch />

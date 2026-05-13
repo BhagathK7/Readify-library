@@ -31,7 +31,7 @@ export default function ReadingChallengeForm({ onClose, onChallengeAdded }) {
   return (
     <div className="challenge-form-modal">
       <div className="modal-content">
-        <h3>Set a New Challenge</h3>
+        <h3>Set a New Challenge Now </h3>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Challenge Title</label>
@@ -56,8 +56,8 @@ export default function ReadingChallengeForm({ onClose, onChallengeAdded }) {
           <div className="form-group">
             <label>Unit</label>
             <select value={unit} onChange={(e) => setUnit(e.target.value)}>
-              <option value="books">Books</option>
-              <option value="pages">Pages</option>
+              <option value="books">Books </option>
+              <option value="pages">Pages </option>
             </select>
           </div>
           <div className="form-actions">
