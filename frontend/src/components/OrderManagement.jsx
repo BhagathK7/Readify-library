@@ -46,12 +46,12 @@ export default function OrderManagement() {
         <table>
           <thead>
             <tr>
-              <th>Order ID</th>
-              <th>Customer</th>
-              <th>Total</th>
-              <th>Status</th>
-              <th>Date</th>
-              <th>Actions</th>
+              <th>Order ID </th>
+              <th>Customer </th>
+              <th>Total </th>
+              <th>Status </th>
+              <th>Date </th>
+              <th>Actions </th>
             </tr>
           </thead>
           <tbody>
