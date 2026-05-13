@@ -19,7 +19,7 @@ The platform showcases modern deployment and infrastructure practices including 
 
 ---
 
-# Core Features
+# Core Features include :-
 
 ## Application Layer
 
