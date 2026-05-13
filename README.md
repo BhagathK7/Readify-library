@@ -5,7 +5,7 @@
 ### Cloud-Native Library Management Platform
 
 <p align="center">
-Modern MERN Stack application integrated with a complete DevOps workflow using Kubernetes, Terraform, CI/CD automation, and Monitoring infrastructure.
+Modern MERN Stack Application integrated with a complete DevOps workflow using Kubernetes, Terraform, CI/CD automation, and Monitoring infrastructure.
 </p>
 
 ---
@@ -19,7 +19,7 @@ The platform showcases modern deployment and infrastructure practices including 
 
 ---
 
-# Core Features include :-
+# Core Features Include :-
 
 ## Application Layer
 
