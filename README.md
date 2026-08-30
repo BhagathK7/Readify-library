@@ -22,7 +22,7 @@ The platform showcases modern deployment and infrastructure practices including 
 # Core Features Include :-
  
 ## Application Layer 
-
+ 
 - User Authentication System
 - Book Catalog Management
 - Shopping Cart & Orders
