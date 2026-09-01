@@ -8,7 +8,7 @@
 Modern MERN Stack Application integrated with a complete DevOps workflow using Kubernetes, Terraform, CI/CD automation, and Monitoring infrastructure.
 </p>
 
----
+--- 
  
 
 # Overview
