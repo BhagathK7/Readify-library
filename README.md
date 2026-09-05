@@ -27,7 +27,7 @@ The platform showcases modern deployment and infrastructure practices including 
 - Book Catalog Management
 - Shopping Cart & Orders
 - Admin Dashboard
-- REST API Architecture
+- REST API Architecture 
 - MongoDB Atlas Integration
 
 ---
