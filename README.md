@@ -10,7 +10,7 @@ Modern MERN Stack Application integrated with a complete DevOps workflow using K
 
 --- 
  
-
+ 
 # Overview
 
 Readify is a full-stack Library Management System developed to demonstrate a production-style DevOps workflow integrated with a MERN stack application.
