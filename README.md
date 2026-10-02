@@ -23,7 +23,7 @@ The platform showcases modern deployment and infrastructure practices including 
  
 ## Application Layer 
  
-- User Authentication System
+- User Authentication System 
 - Book Catalog Management
 - Shopping Cart & Orders
 - Admin Dashboard
