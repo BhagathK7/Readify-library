@@ -46,7 +46,7 @@ The platform showcases modern deployment and infrastructure practices including 
 
 # Technology Stack
 
-| Layer | Technologies |
+| Layer | Technologies | 
 |------|-------------|
 | Frontend | React, Vite, Tailwind CSS |
 | Backend | Node.js, Express.js |
